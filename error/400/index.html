@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, page is not found</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        body {
+            font-family: "ubuntu", sans-serif;
+            font-size: 30px;
+            text-align: center;
+            background-color: #27ae60;
+        }
+
+        .container h1 {
+            font-size: 100px;
+        }
+
+        .container .buttons a {
+            margin: 0 30px;
+            text-decoration: none;
+            color: #ecf0f1;
+            background-color: #e74c3c;
+            padding: 10px;
+            font-size: 40px;
+            border-radius: 10px;
+            border: 2px solid #e74c3c;
+            transition: .3s all ease;
+        }
+
+        .container .buttons a:hover {
+            background-color: transparent;
+            color: #e74c3c;
+        }
+
+        .container .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 480px) {
+            .container .buttons {
+                flex-direction: column;
+            }
+
+            .container .buttons a {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .container {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>400</h1>
+        <h3>Sorry, you entered bad request.</h3>
+        <p>You entered bad request</p>
+        <div class="buttons">
+            <a href="javascript:javascript:history.go(-1)" class="button">Back</a>
+            <a href="mailto:codinghard.09@gmail.com" class="button">Send to me</a>
+        </div>
+    </div>
+</body>
+</html>

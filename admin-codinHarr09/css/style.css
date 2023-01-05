@@ -1,0 +1,11 @@
+
+body {
+    height: 90vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "poppins",sans-serif;
+    align-items: center;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register on codinHarr</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: url("https://wallpapercave.com/wp/wp9109423.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            font-family: "ubuntu", sans-serif;
+        }
+        html {
+            height: 100%;
+        }
+
+        .register div .errors {
+            padding: 5px 0;
+            text-align: left;
+            font-family: "poppins", sans-serif;
+            border: 1px solid gray; 
+            border-radius: 5px;
+            border-left: 7px solid #c0392b;
+        }
+
+        .register div .errors h3.errorText {
+            margin: 10px 0;
+            margin-left: 10px;
+
+        }
+        .register {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .register div.container {
+            color: white;
+            background-color: #8e44ad;
+            padding: 50px 50px;
+            text-align: center;
+        }
+
+        .register h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .register form input[type="text"], .register form input[type="password"] {
+            font-size: 20px;
+            margin: 5px 0;
+            padding: 10px;
+            outline: none;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 5px;
+            transition: .3s all ease;
+        }
+
+        .register form input[type="text"]:focus, .register form input[type="password"]:focus {
+            border-color: #2980b9;
+        }
+
+        .register form input#confirm_password {
+            margin-bottom: 20px;
+        }
+
+        .register form button {
+            font-size: 25px;
+            background-color: #e74c3c;
+            outline: none;
+            border: 3px solid #e74c3c; 
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-family: "ubuntu", sans-serif;
+            border-radius: 10px;
+            transition: .3s all ease;  
+        }
+
+        .register form button:hover {
+            background-color: transparent;
+            color: #e74c3c;
+        }
+        .register div h3 {
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        h3 a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <div class="container">
+            <h2 class="title">Sign up for free</h2>
+            <div class="errors">
+                <h3 class="errorText">Error</h3>
+            </div>
+            <form action="">
+                <input type="text" name="" id="username" placeholder="Enter your Username" required> <br>
+                <input type="password" name="" id="password" placeholder="Enter your Password" required>  <br>
+                <input type="password" name="" id="confirm_password" placeholder="Enter password again" required> <br> 
+                <input type="checkbox" name="" id="show_password"> <label for="show_password">Show password</label> <br> 
+
+                <button id="submit">Sign up</button>
+            </form>
+
+            <h3>Already have a account? <a href="signin.html"> Sign in </a></h3>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
